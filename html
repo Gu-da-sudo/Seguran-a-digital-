@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Segurança Digital & Matemática</h2>
+        <p>Gere senhas fortes baseadas em alta entropia (aleatoriedade).</p>
+        
+        <div class="input-group">
+            <label for="length">Comprimento da senha: <span id="length-val">12</span> caracteres</label>
+            <input type="range" id="length" min="6" max="32" value="12">
+        </div>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="uppercase" checked> Incluir Letras Maiúsculas</label>
+            <label><input type="checkbox" id="lowercase" checked> Incluir Letras Minúsculas</label>
+            <label><input type="checkbox" id="numbers" checked> Incluir Números</label>
+            <label><input type="checkbox" id="symbols" checked> Incluir Símbolos</label>
+        </div>
+
+        <button id="generate-btn">Gerar Senha Segura</button>
+
+        <div class="result-container">
+            <input type="text" id="password-display" readonly placeholder="Sua senha aparecerá aqui">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
